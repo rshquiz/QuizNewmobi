@@ -168,7 +168,7 @@ public class QuizActivity extends AppCompatActivity {
 
     public void onResume(){
         super.onResume();
-        System.out.println("OI");
+        System.out.println("OIww");
     }
 
 }
