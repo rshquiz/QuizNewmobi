@@ -3,4 +3,9 @@
 
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="next_question">PROXIMA</string>
+    <string name="answer_choices">CHOICES</string>
+    <string name="wrong_answer">Wrong Answer</string>
 </resources>

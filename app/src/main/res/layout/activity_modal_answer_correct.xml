@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/AVISO">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="RESPOSTA CORRETA!"
+            android:id="@+id/textView"
+            android:textColor="#2e9a28"
+            android:textSize="72dp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BUTTON"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="20sp">
+
+        <info.hoang8f.widget.FButton
+            fbutton:buttonColor="@color/gilson_gosta"
+            android:id="@+id/buttonNEXT_QUESTION"
+            android:layout_width="fill_parent"
+            android:layout_height="60sp"
+            android:text="@string/next_question"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:background="@android:color/darker_gray"
+            android:shadowColor="#323232" />
+
+
+
+    </TableRow>
+</LinearLayout>

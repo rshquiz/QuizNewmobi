@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/home_container"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
+    android:background="@color/accent_material_light">
 
+    <!--
     <br.newmobi.quiznewmobi.IntroVideoSurfaceView
         android:id="@+id/surface"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
+    -->
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="380sp"
+        android:layout_height="360sp"
         android:id="@+id/IMAGES">
 
         <TableRow
@@ -22,65 +25,77 @@
             android:layout_height="match_parent"
             android:gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="IMAGENS QUIZ"
-                android:id="@+id/textView"
-                android:textStyle="bold"
-                android:textSize="70dp" />
+            <!--
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+               -->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="PERGUNTA"
+                    android:id="@+id/textViewQuestions"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="50dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
         </TableRow>
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="150sp"
-        android:layout_height="380sp"
-        android:layout_gravity="right|bottom"
-        android:id="@+id/TIMER_AND_CANCEL">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="TIMER E CANCELAR"
-                android:id="@+id/textView2"
-                android:textStyle="bold" />
-        </TableRow>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="1120sp"
-        android:layout_height="350sp"
+        android:layout_width="fill_parent"
+        android:layout_height="300sp"
         android:layout_gravity="bottom"
         android:id="@+id/QUESTIONS">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/questions_listView">
 
-            <TextView
-                android:layout_width="wrap_content"
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="PERGUNTAS"
-                android:id="@+id/textView3"
-                android:textStyle="bold"
-                android:textSize="50dp" />
+                app:cardCornerRadius="20sp"
+                app:cardElevation="10sp"
+                android:id="@+id/view">
+
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listViewQuestion"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom|center_vertical"
+                     />
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
         </TableRow>
+
     </LinearLayout>
 
 
-</FrameLayout>
 
+
+</FrameLayout>
 
 
 
